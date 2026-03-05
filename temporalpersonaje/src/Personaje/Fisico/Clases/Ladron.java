@@ -1,7 +1,7 @@
 package Personaje.Fisico.Clases;
 
-import Personaje.Personaje;
 import Personaje.Fisico.PersonajeFisico;
+import Personaje.Personaje;
 
 public class Ladron extends PersonajeFisico{
     
@@ -12,4 +12,8 @@ public class Ladron extends PersonajeFisico{
     public void atacar(Personaje objetivo) {
         System.out.println(this.getnombre() + " ataca con fuerza.");
     }
+
+    public void robarOro(Personaje objetivo){
+    System.out.println(getnombre() + " roba oro a " + objetivo.getnombre());
+}
 }

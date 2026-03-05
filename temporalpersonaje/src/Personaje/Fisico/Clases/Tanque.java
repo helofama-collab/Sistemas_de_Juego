@@ -1,7 +1,7 @@
 package Personaje.Fisico.Clases;
 
-import Personaje.Personaje;
 import Personaje.Fisico.PersonajeFisico;
+import Personaje.Personaje;
 
 public class Tanque extends PersonajeFisico{
     
@@ -13,4 +13,8 @@ public class Tanque extends PersonajeFisico{
     public void atacar(Personaje objetivo) {
         System.out.println(this.getnombre() + " ataca con fuerza.");
     }
+
+    public void provocar(Personaje objetivo){
+    System.out.println(getnombre() + " provoca a " + objetivo.getnombre() + " para que lo ataque.");
+}
 }

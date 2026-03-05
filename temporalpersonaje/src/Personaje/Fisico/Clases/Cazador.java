@@ -1,7 +1,7 @@
 package Personaje.Fisico.Clases;
 
-import Personaje.Personaje;
 import Personaje.Fisico.PersonajeFisico;
+import Personaje.Personaje;
 
 public class Cazador extends PersonajeFisico{
     
@@ -13,4 +13,8 @@ public class Cazador extends PersonajeFisico{
     public void atacar(Personaje objetivo) {
         System.out.println(this.getnombre() + " ataca con fuerza.");
     }
+
+    public void colocarTrampa(Personaje objetivo){
+    System.out.println(getnombre() + " coloca una trampa para atrapar a " + objetivo.getnombre());
+}
 }

@@ -1,7 +1,7 @@
 package Personaje.Fisico.Clases;
 
-import Personaje.Personaje;
 import Personaje.Fisico.PersonajeFisico;
+import Personaje.Personaje;
 
 public class Guerrero extends PersonajeFisico{
     
@@ -12,4 +12,8 @@ public class Guerrero extends PersonajeFisico{
     public void atacar(Personaje objetivo) {
         System.out.println(this.getnombre() + " ataca con fuerza.");
     }
+
+    public void gritoDeGuerra(){
+    System.out.println(getnombre() + " lanza un grito de guerra que aumenta su fuerza.");
+}
 }

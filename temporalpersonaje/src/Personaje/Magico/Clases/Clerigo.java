@@ -1,7 +1,7 @@
 package Personaje.Magico.Clases;
 
-import Personaje.Personaje;
 import Personaje.Magico.PersonajeMagico;
+import Personaje.Personaje;
 
 public class Clerigo extends PersonajeMagico{
     
@@ -13,4 +13,8 @@ public class Clerigo extends PersonajeMagico{
     public void atacar(Personaje objetivo) {
         System.out.println(this.getnombre() + " ataca con fuerza.");
     }
+
+    public void bendecirAliado(Personaje objetivo){
+    System.out.println(getnombre() + " bendice a " + objetivo.getnombre());
+}
 }

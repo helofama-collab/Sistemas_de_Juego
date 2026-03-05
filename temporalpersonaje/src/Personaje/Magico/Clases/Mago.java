@@ -1,7 +1,7 @@
 package Personaje.Magico.Clases;
 
-import Personaje.Personaje;
 import Personaje.Magico.PersonajeMagico;
+import Personaje.Personaje;
 
 public class Mago extends PersonajeMagico{
     
@@ -13,4 +13,8 @@ public class Mago extends PersonajeMagico{
     public void atacar(Personaje objetivo) {
         System.out.println(this.getnombre() + " ataca con fuerza.");
     }
+
+    public void teletransportarse(){
+    System.out.println(getnombre() + " se teletransporta a otra posición.");
+}   
 }
