@@ -1,9 +1,14 @@
-package app;
+package controller;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import Personaje.Personaje;
+import model.Curable;
+import model.Defendible;
+import model.Hechizable;
+import model.Movilizable;
+import model.Personaje;
+import model.Sigiloso;
 
 public class GestorJuego {
 
@@ -29,10 +34,35 @@ public class GestorJuego {
     public void simularTurno() {
         System.out.println("Simulación de turno de ataque:");
         for (Personaje atacante : personajes) {
-            // Por simplicidad, cada personaje ataca al siguiente en la lista
             Personaje objetivo = obtenerSiguienteObjetivo(atacante);
             if (objetivo != null) {
                 atacante.atacar(objetivo);
+            }
+        }
+    }
+
+    public void mostrarCapacidades() {
+        System.out.println("Demostración de capacidades por interfaz:");
+        for (Personaje p : personajes) {
+            if (p instanceof Curable) {
+                Curable curable = (Curable) p;
+                curable.curar(p);
+            }
+            if (p instanceof Defendible) {
+                Defendible defendible = (Defendible) p;
+                defendible.defender();
+            }
+            if (p instanceof Movilizable) {
+                Movilizable movilizable = (Movilizable) p;
+                movilizable.moverse();
+            }
+            if (p instanceof Sigiloso) {
+                Sigiloso sigiloso = (Sigiloso) p;
+                sigiloso.ocultar();
+            }
+            if (p instanceof Hechizable) {
+                Hechizable hechizable = (Hechizable) p;
+                hechizable.lanzarHechizo(p);
             }
         }
     }
