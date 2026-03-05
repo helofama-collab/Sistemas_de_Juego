@@ -62,3 +62,4 @@ public abstract class Personaje {
     
     public abstract void atacar(Personaje objetivo);
 }
+

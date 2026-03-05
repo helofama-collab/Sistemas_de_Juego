@@ -1,9 +1,10 @@
 package Personaje.Fisico.Clases;
 
+import Personaje.Defendible;
 import Personaje.Fisico.PersonajeFisico;
 import Personaje.Personaje;
 
-public class Guerrero extends PersonajeFisico{
+public class Guerrero extends PersonajeFisico implements Defendible{
     
     public Guerrero(String nombre, int nivel, int fuerza,int estamina, int defensa, double probabilidadCritico){
     super(nombre,nivel,fuerza,estamina,defensa,probabilidadCritico);    }
@@ -15,5 +16,10 @@ public class Guerrero extends PersonajeFisico{
 
     public void gritoDeGuerra(){
     System.out.println(getnombre() + " lanza un grito de guerra que aumenta su fuerza.");
-}
+    }
+
+    @Override
+    public void defender() {
+        System.out.println(getnombre() + " se defiende con su escudo.");
+    }
 }
