@@ -1,4 +1,4 @@
-package model.fisico.clases;
+package model.fisico;
 
 import model.Personaje;
 

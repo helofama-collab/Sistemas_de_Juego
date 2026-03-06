@@ -4,14 +4,14 @@ import model.Hechizable;
 import model.Personaje;
 import model.magico.PersonajeMagico;
 
-public class Hechizero extends PersonajeMagico implements Hechizable {
+public class Hechicero extends PersonajeMagico implements Hechizable {
 
     private int controlCaos;
     private int corrupcion;
-    
-    public Hechizero(String nombre, int nivel, int mana, int resistenciamagica, int regeneracionmana, int sabiduria,
-                     int controlCaos, int corrupcion){
-        super(nombre,nivel, mana, resistenciamagica, regeneracionmana, sabiduria);
+
+    public Hechicero(String nombre, int nivel, int mana, int resistenciamagica, int regeneracionmana, int sabiduria,
+            int controlCaos, int corrupcion) {
+        super(nombre, nivel, mana, resistenciamagica, regeneracionmana, sabiduria);
         this.controlCaos = controlCaos;
         this.corrupcion = corrupcion;
     }
@@ -21,8 +21,8 @@ public class Hechizero extends PersonajeMagico implements Hechizable {
         System.out.println(getnombre() + " desata un hechizo oscuro sobre " + objetivo.getnombre() + ".");
     }
 
-    public void canalizarMana(){
-    System.out.println(getnombre() + " canaliza mana para recuperar poder mágico.");
+    public void canalizarMana() {
+        System.out.println(getnombre() + " canaliza mana para recuperar poder mágico.");
     }
 
     @Override
@@ -33,7 +33,7 @@ public class Hechizero extends PersonajeMagico implements Hechizable {
     @Override
     protected String getDetallesMagicoPropios() {
         StringBuilder sb = new StringBuilder();
-        sb.append("---- Atributos propios de Hechizero ----\n");
+        sb.append("---- Atributos propios de Hechicero ----\n");
         sb.append("Control del caos : ").append(controlCaos).append("\n");
         sb.append("Corrupción       : ").append(corrupcion).append("\n");
         return sb.toString();

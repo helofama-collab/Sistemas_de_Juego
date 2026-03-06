@@ -3,6 +3,7 @@ package model.fisico.clases;
 import model.Movilizable;
 import model.Personaje;
 import model.Sigiloso;
+import model.fisico.PersonajeFisico;
 
 public class Ladron extends PersonajeFisico implements Sigiloso, Movilizable{
 

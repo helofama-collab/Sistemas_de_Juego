@@ -1,4 +1,4 @@
-package app;
+package vista;
 
 import controller.GestorJuego;
 import model.fisico.clases.*;
@@ -18,7 +18,7 @@ public class App {
         Ladron ladron = new Ladron("Ladrón", 3, 17, 19, 7, 0.35, 75, 80);
 
         Mago mago = new Mago("Mago", 5, 30, 10, 5, 25, 90, 80);
-        Hechizero hechizero = new Hechizero("Hechicero", 4, 28, 9, 6, 22, 85, 70);
+        Hechicero hechicero = new Hechicero("Hechicero", 4, 28, 9, 6, 22, 85, 70);
         Clerigo clerigo = new Clerigo("Clérigo", 3, 25, 12, 7, 20, 95, 90);
         Nigromante nigromante = new Nigromante("Nigromante", 4, 27, 11, 6, 23, 88, 85);
 
@@ -27,7 +27,7 @@ public class App {
         gestor.agregarPersonaje(cazador);
         gestor.agregarPersonaje(ladron);
         gestor.agregarPersonaje(mago);
-        gestor.agregarPersonaje(hechizero);
+        gestor.agregarPersonaje(hechicero);
         gestor.agregarPersonaje(clerigo);
         gestor.agregarPersonaje(nigromante);
 
@@ -49,7 +49,7 @@ public class App {
         cazador.colocarTrampa(ladron);
         ladron.robarOro(cazador);
         mago.teletransportarse();
-        hechizero.canalizarMana();
+        hechicero.canalizarMana();
         clerigo.bendecirAliado(guerrero);
         nigromante.levantarMuerto();
 

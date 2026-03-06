@@ -1,8 +1,8 @@
 package model.fisico.clases;
 
-import model.Movilizable;
-import model.Personaje;
-import model.Sigiloso;
+import model.*;
+
+import model.fisico.PersonajeFisico;
 
 public class Cazador extends PersonajeFisico implements Movilizable, Sigiloso{
 

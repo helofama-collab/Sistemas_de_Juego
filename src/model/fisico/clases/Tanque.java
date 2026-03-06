@@ -2,6 +2,7 @@ package model.fisico.clases;
 
 import model.Defendible;
 import model.Personaje;
+import model.fisico.PersonajeFisico;
 
 public class Tanque extends PersonajeFisico implements Defendible{
 
